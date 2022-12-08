@@ -9,7 +9,7 @@ DevCore is a translate library for MySQL database to work with Python classes
 
 🟡 Warning: You should import the library from main thread. don't use threading to import it
 
-
+<br>Please open new issue in GitHub if any issue happened with you.
 # Required library
 * pip install pymysql
 
