@@ -41,7 +41,7 @@ main application
 
 ```py
 # import your own file
-from yourownfile import * # connect to all MySQL database. can block main thread
+from yourownfile import * # connect to all MySQL database at first start. can block main thread
 
 class MainApplication:
     def __init__(self):
@@ -91,7 +91,7 @@ class Users(Table):
 
 main application
 ```py
-from yourownfile import * # connect to all MySQL database. can block main thread.
+from yourownfile import * # connect to all MySQL database at first start. can block main thread
 
 users = Users() # will not block main thread.
 
