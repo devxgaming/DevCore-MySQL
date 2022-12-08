@@ -1,6 +1,7 @@
 # What is DevCore?
 DevCore is a translate library for MySQL database to work with Python classes
 * Create Python class as database table
+* Set & Get data as python objects.
 * Control your database table from python class
 * Allow you to use custom MySQL commands
 * Custom functions and variables in table class
