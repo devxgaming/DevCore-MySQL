@@ -2,7 +2,7 @@ from DevCore import MySQL, Table
 
 databaseName = 'ExampleDatabase'
 
-@MySQL(databaseName, host='localhost', user='root', password='1234567x')
+@MySQL(databaseName, host='localhost', user='root', password='*****')
 class MyTable(Table):
     id = Table.intField(auto=True)
     username = Table.strField()
