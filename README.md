@@ -164,7 +164,7 @@ lessThan | value: `Union[int, float]` | self | `<` operator | `< value`
 lessThanOrEquals | value: `Union[int, float]` | self | `<=` operator | `<= value`
 notNull | `None` | self | `NOT NULL` operator | `column NOT NULL`
 isNull | `None` | self | `IS NULL` operator | `column IS NULL`
-iN | `value: tuple` | self | `IN` operator | `IN (tuple value, tuple value)`
+iN | `value: tuple` | self | `IN` operator | `IN (element, element1)`
 between | value: `Union[str, int, float, bool]`, value2: `Union[str, int, float, bool]` | self | `between` operator | `between value and value2`
 orderBy | variable: `str`, stuff=`"asc"`, limit=`0` | self | sort by variable `asc` default, limit=`0` unlimited | `ORDER BY variable ASC` or `ORDER BY variable ASC limit number`
 first | `None` | Your table class or None | first row from result | `Unknown`
