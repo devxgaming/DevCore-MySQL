@@ -61,7 +61,7 @@ custom mysql command and functions in table
 ```py
 @MySQL(databaseName, host='localhost', user='root', password='')
 class Users(Table):
-    id = Table.intField(auto=True) # auto incremment (required).
+    id = Table.intField(auto=True) # auto (required) for each table.
     name = Table.strField(null=True) # allow column value be null, default: False
     username = Table.strField()
     password = Table.strField()
