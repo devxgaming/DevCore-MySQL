@@ -751,7 +751,9 @@ class Table(Field):
             values.append(value)
             return self.execute(command, values, db = db).run()
         else:
-            return self.__insert(changed)
+            _id = self.__insert(changed)
+            this.__setattr__(auto, _id, True)
+            return _id
 
     def save(self) -> Union[int, None]:
         auto = self._get_auto_field()
