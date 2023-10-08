@@ -764,7 +764,10 @@ class Table(Field):
         if auto in changed:
             return self.__update(changed, auto, self._get_auto_field_value())
         else:
-            return self.__insert(changed)
+
+            _id = self.__insert(changed)
+            this.__setattr__(auto, _id, True)
+            return _id
 
     def delete(self):
         auto = self._get_auto_field()
